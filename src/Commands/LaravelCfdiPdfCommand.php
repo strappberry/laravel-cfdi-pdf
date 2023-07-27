@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Strappberry\LaravelCfdiPdf\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelCfdiPdfCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-cfdi-pdf';
 
     public $description = 'My command';
 

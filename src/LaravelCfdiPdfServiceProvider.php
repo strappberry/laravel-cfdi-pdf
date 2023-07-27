@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Strappberry\LaravelCfdiPdf;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Strappberry\LaravelCfdiPdf\Commands\LaravelCfdiPdfCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LaravelCfdiPdfServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,9 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-cfdi-pdf')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasViews('laravel-cfdi-pdf')
+            ->hasCommand(LaravelCfdiPdfCommand::class);
     }
 }
