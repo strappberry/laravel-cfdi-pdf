@@ -4,7 +4,6 @@ namespace Strappberry\LaravelCfdiPdf\Controllers;
 
 use Spipu\Html2Pdf\Html2Pdf;
 
-
 class DebugController
 {
     public function render()
