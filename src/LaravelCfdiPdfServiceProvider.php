@@ -17,8 +17,9 @@ class LaravelCfdiPdfServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-cfdi-pdf')
-            ->hasConfigFile()
+            ->hasConfigFile('cfdi-pdf')
             ->hasViews('laravel-cfdi-pdf')
+            ->hasRoute('web')
             ->hasCommand(LaravelCfdiPdfCommand::class);
     }
 }
